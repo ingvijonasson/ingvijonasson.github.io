@@ -407,9 +407,9 @@ p {
 	background: rgba(0,0,0, .6);,
 }
 
-.flex-wrapper,.site-footer {
-  max-width: 500px;
-  margin-left: auto
+.l-container {
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .flex-wrapper,.relative {
