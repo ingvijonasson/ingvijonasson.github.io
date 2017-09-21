@@ -10,117 +10,120 @@
 	<link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
-	<div class="o-container">
+	<div class="o-container o-container--centered">
 
 		<header class="site-header">
-			<h1 class="site-header__headline">Ingvi Jónasson</h1>
-			<p>I am a frontend developer living in Bern, Switzerland. I am passionate about the web and constantly aiming to broader my knowledge and the spectrum of my competences.</p>
+			<div class="site-header__brand">
+				<h1 class="site-header__headline">Ingvi Jónasson</h1>
+				<h2 class="site-header__subline">Frontend developer. Based in Bern, Switzerland.</h2>
+			</div>
+			<ul class="navigation-social">
+				<li><a class="navigation-social__item" href="http://twitter.com/_ingvi">Twitter</a></li>
+				<li><a class="navigation-social__item" href="http://github.com/ingvijonasson">GitHub</a></li>
+				<li><a class="navigation-social__item" href="https://codepen.io/ingvi">Codepen</a></li>
+			</ul>
 		</header>
 
-
-		<ul class="navigation-social">
-			<li><a class="navigation-social__item" href="#">Twitter</a></li>
-			<li><a class="navigation-social__item" href="#">GitHub</a></li>
-			<li><a class="navigation-social__item" href="#">Stack Overflow</a></li>
-		</ul>
-
-		<section class="o-section">
+		<section class="o-section profile">
 			<h2 class="o-section__title">Profile</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit assumenda quisquam doloremque, debitis voluptates non distinctio aut veritatis vel soluta eius deserunt natus quia sed necessitatibus iste fugit libero illum?</p>
+
+			<div class="o-grid o-section">
+				<article>
+					<h3 class="">Day to day comfort</h3>
+					<ul class="keySkills">
+						<li>Accessible and semantic HTML</li>
+						<li>CSS (mobile first, BEM, ITCSS)</li>
+						<li>Atomic design</li>
+						<li>Sass & Stylus</li>
+						<li>Javascript (ES6)</li>
+						<li>Git & GitHub</li>
+					</ul>
+				</article>
+
+				<article>
+					<h3>also familiar with:</h3>
+					<ul class="keySkills">
+						<li>PHP and MySQL</li>
+						<li>WordPress</li>
+						<li>Kirby</li>
+						<li>Jekyll</li>
+						<li>Mavo</li>
+						<li>Vue</li>
+						<li>React</li>
+						<li>Angular</li>
+						<li>Ionic</li>
+						<li>Gulp</li>
+						<li>Webpack</li>
+					</ul>
+				</article>
+			</div>
 		</section>
+
 
 		<section class="o-section">
 			<h2 class="o-section__title">Experience</h2>
 
-			<article class="single-experience">
-				<h3>Web developer at Ginetta</h3>
-				<p class="subDetails">June 2016 - current</p>
-				<p>Developing applications, pattern libraries and styleguides with technologies such as React, Vue and Angular.</p>
+			<article class="card">
+				<h3 class="card__title">Web developer at Ginetta</h3>
+				<p class="card__period">June 2016 - current</p>
+				<p class="card__description">Creating pattern libraries, styleguides and applications with various frameworks such as React, Vue and Angular.</p>
 			</article>
 
-			<article class="single-experience">
-				<h3>Web developer freelancer</h3>
-				<p class="subDetails">May 2014 - May 2016</p>
-				<p>Frontend development and WordPress theming for clients such as: Activity Stream, Barkbox, <a href="http://eogco.is/">E&Co.</a> <a href="http://www.florafaunavisions.de/">florafaunavisions</a>, <a href="http://geysir.com">Geysir</a>, <a href="http://hafnarborg.is/">Hafnarborg</a>, <a href="http://hverfisgalleri.is/">Hverfisgalleri</a>, <a href="http://www.mannverk.is/">Mannverk</a>, Meniga, <a href="http://nordichouse.is/">Nordic House</a>, <a href="http://record-shops.org">Record-Shops</a>, <a href="http://reykjavikapartment.is">Reykjavik Apartment</a>, <a href="http://vsb.is/">VSB</a> and <a href="http://woomera.de/">Woomera web and video</a>.</p>
+			<article class="card">
+				<h3 class="card__title">Web developer freelancer</h3>
+				<p class="card__period">May 2014 - May 2016</p>
+				<p class="card__description">Frontend development and WordPress theming for clients such as: <a href="https://www.activitystream.com/">Activity Stream</a>, <a href="https://barkbox.com/">Barkbox</a>, <a href="http://eogco.is/">E&Co.</a> <a href="http://www.florafaunavisions.de/">florafaunavisions</a>, <a href="http://geysir.com">Geysir</a>, <a href="http://hafnarborg.is/">Hafnarborg</a>, <a href="http://hverfisgalleri.is/">Hverfisgalleri</a>, <a href="http://www.mannverk.is/">Mannverk</a>, Meniga, <a href="http://nordichouse.is/">Nordic House</a>, <a href="http://record-shops.org">Record-Shops</a>, <a href="http://reykjavikapartment.is">Reykjavik Apartment</a>, <a href="http://vsb.is/">VSB</a> and <a href="http://woomera.de/">Woomera web and video</a>.</p>
 			</article>
 
-			<article class="single-experience">
-				<h3>Web developer at Skapalón</h3>
-				<p class="subDetails">Jan 2013 - May 2014</p>
-				<p>Frontend development of custom web applications, WordPress theming and building of HTML emails. <a href="http://www.skapalon.is/">Skapalón</a> is one of the most successful web agencies in Iceland.</p>
+			<article class="card">
+				<h3 class="card__title">Web developer at Skapalón</h3>
+				<p class="card__period">Jan 2013 - May 2014</p>
+				<p class="card__description">Frontend development of custom web applications, WordPress theming and building HTML emails.</p>
 			</article>
 
-			<article class="single-experience">
-				<h3>Web developer at Skapalón</h3>
-				<p class="subDetails">Jan 2013 - May 2014</p>
-				<p>Frontend development of custom web applications, WordPress theming and building of HTML emails. <a href="http://www.skapalon.is/">Skapalón</a> is one of the most successful web agencies in Iceland.</p>
-			</article>
-
-			<article class="single-experience">
-				<h3>Supervisor at SAE Institute Berlin</h3>
-				<p class="subDetails">Okt 2012 - May 2013</p>
-				<p>Assisting students with their assignments such as frontend development, programming with PHP and MySQL and working with Photoshop, Illustrator and Flash. Creating development assets for students and responsibilities for various administration tasks.</p>
+			<article class="card">
+				<h3 class="card__title">Supervisor at SAE Institute Berlin</h3>
+				<p class="card__period">Okt 2012 - May 2013</p>
+				<p class="card__description">Assisting students with their assignments such as frontend development, programming with PHP and MySQL and working with Photoshop, Illustrator and Flash. Creating development assets for students and responsibilities for various administration tasks.</p>
 			</article>
 		</section>
 
-		<section class="o-section">
-			<h2>Day to day comfort</h2>
-			<ul class="keySkills">
-				<li>Accessible and semantic HTML</li>
-				<li>CSS (mobile first, BEM, ITCSS)</li>
-				<li>Atomic design</li>
-				<li>Sass & Stylus</li>
-				<li>Javascript (ES6)</li>
-				<li>Git & GitHub</li>
-			</ul>
-		</section>
 
-		<section>
-			<h2>Familiar with</h2>
-			<ul class="keySkills">
-				<li>PHP and MySQL</li>
-				<li>WordPress</li>
-				<li>Kirby</li>
-				<li>Jekyll</li>
-				<li>Mavo</li>
-				<li>Vue</li>
-				<li>React</li>
-				<li>Angular</li>
-				<li>Ionic</li>
-				<li>Gulp</li>
-				<li>Webpack</li>
-			</ul>
-		</section>
+
+
 
 		<section class="o-section">
 			<h2>Education</h2>
 
-			<article>
-				<h3>SAE Institute Berlin</h3>
-				<p class="subDetails">Sep 2011 - Sep 2012</p>
-				<p>"Web Design and Development Diploma". Main focus was HTML, CSS, Javascript, PHP, MySQL and Photoshop.</p>
+			<article class="card">
+				<h3 class="card__title">SAE Institute Berlin</h3>
+				<p class="card__period">Sep 2011 - Sep 2012</p>
+				<p class="card__description">"Web Design and Development Diploma". Main focus was HTML, CSS, Javascript, PHP, MySQL and Photoshop.</p>
 			</article>
 
-			<article>
-				<h3>BSI Sprachschule</h3>
-				<p class="subDetails">Sep 2009 - Sep 2011</p>
-				<p>German language for foreigners. Graduation with "TestDaF" level C1.</p>
+			<article class="card">
+				<h3 class="card__title">BSI Sprachschule</h3>
+				<p class="card__period">Sep 2009 - Sep 2011</p>
+				<p class="card__description">German language for foreigners. Graduation with "TestDaF" level C1.</p>
 			</article>
 
-			<article>
-				<h3>Fjölbraut í Garðabæ</h3>
-				<p class="subDetails">Sep 2006 - May 2010</p>
-				<p>Icelandic high school where my main topics were marketing, design, psychology and history.</p>
+			<article class="card">
+				<h3 class="card__title">Fjölbraut í Garðabæ</h3>
+				<p class="card__period">Sep 2006 - May 2010</p>
+				<p class="card__description">Icelandic high school where my main topics were marketing, design, psychology and history.</p>
 			</article>
 
-			<article>
-				<h3>Iðnskólinn í Hafnarfirði</h3>
-				<p class="subDetails">Sep 2000 - May 2002</p>
-				<p>Icelandic technical college were I graduadet with a "Industrial design and development" Diploma.</p>
+			<article class="card">
+				<h3 class="card__title">Iðnskólinn í Hafnarfirði</h3>
+				<p class="card__period">Sep 2000 - May 2002</p>
+				<p class="card__description">Icelandic technical college were I graduadet with a "Industrial design and development" Diploma.</p>
 			</article>
 		</section>
 
 		<section class="o-section">
 			<h2>Languages</h2>
+			<div class="o-grid">
 			<ul>
 				<li>English <i>*</i></li>
 				<li>German <i>*</i></li>
@@ -128,6 +131,7 @@
 				<li>French <i>***</i></li>
 			</ul>
 			<small>* Full professional proficiency,<br />  ** Native language, <br />  *** Elementary proficiency</small>
+		</div>
 		</section>
 
 		<section class="o-section">
