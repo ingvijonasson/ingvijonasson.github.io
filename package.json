@@ -1,0 +1,24 @@
+{
+  "name": "ingvijonasson.github.io",
+  "version": "1.0.0",
+  "description": "Personal site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "mincss": "postcss css/main.css > dist/main.min.css" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ingvijonasson/ingvijonasson.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ingvijonasson/ingvijonasson.github.io/issues"
+  },
+  "homepage": "https://github.com/ingvijonasson/ingvijonasson.github.io#readme",
+  "devDependencies": {
+    "cssnano": "^3.10.0"
+  }
+}
