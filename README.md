@@ -1,2 +1,10 @@
 # ingvijonasson.github.io
-Personal site
+
+``` bash
+npm install
+```
+
+
+``` bash
+npm run cssmin
+```
