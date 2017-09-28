@@ -2,9 +2,5 @@
 
 ``` bash
 npm install
-```
-
-
-``` bash
-npm run cssmin
+npm start
 ```
