@@ -4,8 +4,9 @@
   "description": "Personal site",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "mincss": "postcss css/main.css > dist/main.min.css" 
+    "postcss": "postcss --use postcss-cssnext --use cssnano --output css/main.min.css css/main.css --watch",
+    "reload": "lr-http-server -p 3000",
+    "start": "npm-run-all -p postcss reload"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,14 @@
   },
   "homepage": "https://github.com/ingvijonasson/ingvijonasson.github.io#readme",
   "devDependencies": {
-    "cssnano": "^3.10.0"
+    "cssnano": "^3.10.0",
+    "postcss": "^6.0.11",
+    "postcss-cli": "^4.1.1",
+    "postcss-cssnext": "^3.0.2"
+  },
+  "dependencies": {
+    "browser-sync": "^2.18.13",
+    "lr-http-server": "^0.1.5",
+    "npm-run-all": "^4.1.1"
   }
 }
