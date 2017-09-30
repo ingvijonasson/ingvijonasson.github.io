@@ -4,7 +4,7 @@
   "description": "Personal site",
   "main": "index.js",
   "scripts": {
-    "postcss": "postcss --use postcss-cssnext --use cssnano --output css/main.min.css css/main.css --watch",
+    "postcss": "postcss --use postcss-cssnext --no-map true --use cssnano --output css/main.min.css css/main.css --watch",
     "reload": "lr-http-server -p 3000",
     "start": "npm-run-all -p postcss reload"
   },
