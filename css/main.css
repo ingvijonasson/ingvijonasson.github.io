@@ -7,14 +7,13 @@
   --font-size-1: 1rem;
   --font-size-2: 1.2rem;
   --font-size-3: 1.4rem;
-  --t-bold: 700;
-  --t-regular: 400;
-
+  --font-bold: 700;
+  --font-regular: 400;
+  --space-0: .5rem;
   --space-1: 1em;
   --space-2: 2.5em;
   --space-3: 3.5em;
   --space-4: 5em;
-
   --color-back: #2B2E4A;
   --color-front: #fff;
   --color-primary: #E84545;
@@ -23,6 +22,7 @@
 /* ----------
 // Normalize / Reset
 // ---------- */
+
 *, ::after, ::before {
   box-sizing: inherit;
 }
@@ -134,9 +134,9 @@ small {
 }
 
 .o-section__title {
+  font-size: var(--font-size-2);
+  font-weight: var(--font-bold);
   color: var(--color-primary);
-  font-weight: 700;
-  font-weight: var(--t-bold);
 }
 
 .o-section__subtitle {
@@ -154,18 +154,19 @@ small {
 /* -----------
 // Components
 // ---------- */
+
 .site-header {
   box-sizing: border-box;
 }
 
 .site-header__brand {
-  font-size: var(--font-size-2);
+  margin-top: var(--space-2);
 }
 
 .site-header__headline {
   margin-top: 0;
-  font-size: var(--font-size-2);
-  font-weight: var(--t-bold);
+  font-size: var(--font-size-3);
+  font-weight: var(--font-bold);
   color: var(--color-primary);
 }
 
@@ -198,7 +199,7 @@ small {
 }
 
 .card__description {
-  margin-top: var(--space-1);
+  margin-top: var(--space-0);
 }
 
 .list-languages {
