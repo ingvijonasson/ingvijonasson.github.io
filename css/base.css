@@ -1,0 +1,62 @@
+/* ----------
+   base
+// ----------*/
+
+html {
+  min-height: 100vh;
+  font-size: 16px;
+  letter-spacing: .2px;
+}
+
+@media only screen and (min-width: 320px) {
+  html {
+    font-size: calc(16px + 8 * ((100vw - 320px) / 680));
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  html {
+    font-size: 24px;
+  }
+}
+
+body {
+  line-height: 1.6;
+  font-family: 'Bitter', serif;
+  color: var(--color-front);
+  background-color: var(--color-back);
+}
+
+h1, h2, h3, h4, h5, h6, p, ul {
+  margin-top: var(--space-1);
+  font-weight: normal;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+h1 {
+  font-size: var(--font-size-2);
+}
+
+h2 {
+  font-size: var(--font-size-1);
+}
+
+h3 {
+  font-size: var(--font-size-1);
+}
+
+p {
+  max-width: 40em;
+}
+
+a {
+  color: var(--color-front);
+}
+
+small {
+  font-size: 80%;
+}

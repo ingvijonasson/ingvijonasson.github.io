@@ -1,0 +1,57 @@
+/* ---------------------------------
+   Components
+   ----------
+   Leave all components here for now
+   as there are only a handful
+// ------------------------------- */
+
+.site-header {
+  box-sizing: border-box;
+}
+
+.site-header__brand {
+  margin-top: var(--space-2);
+}
+
+.site-header__headline {
+  margin-top: 0;
+  font-size: var(--font-size-3);
+  font-weight: var(--font-bold);
+  color: var(--color-primary);
+}
+
+.site-header__subline {
+  margin-top: var(--space-0);
+  font-size: var(--font-size-1);
+}
+
+.navigation-social {
+  margin-top: var(--space-4);
+}
+
+@media only screen and (min-width:600px) {
+  .navigation-social {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.navigation-social__item {
+  padding-right: var(--space-1);
+}
+
+.card {
+  margin-top: var(--space-2);
+}
+
+.card__period {
+  margin-top: 0;
+}
+
+.card__description {
+  margin-top: var(--space-0);
+}
+
+.list-languages {
+  margin: var(--space-1) 0;
+}

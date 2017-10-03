@@ -4,7 +4,7 @@
   "description": "Personal site",
   "main": "index.js",
   "scripts": {
-    "postcss": "postcss --use postcss-cssnext --no-map true --use cssnano --output css/main.min.css css/main.css --watch",
+    "postcss": "postcss -u postcss-import -u postcss-cssnext --no-map true -u cssnano -o css/main.min.css css/main.css --watch",
     "reload": "lr-http-server -p 3000",
     "start": "npm-run-all -p postcss reload"
   },
@@ -20,12 +20,13 @@
   },
   "homepage": "https://github.com/ingvijonasson/ingvijonasson.github.io#readme",
   "devDependencies": {
+  },
+  "dependencies": {
     "cssnano": "^3.10.0",
     "postcss": "^6.0.11",
     "postcss-cli": "^4.1.1",
-    "postcss-cssnext": "^3.0.2"
-  },
-  "dependencies": {
+    "postcss-cssnext": "^3.0.2",
+    "postcss-import": "^11.0.0",
     "browser-sync": "^2.18.13",
     "lr-http-server": "^0.1.5",
     "npm-run-all": "^4.1.1"
